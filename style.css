@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --orange: #f25123;
+    --dark-grey: #242424;
+    --black: #000000;
+    --light-grey: #2d2d2d;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    background: radial-gradient(50% 50% at 50% 50%, #242424 0%, #000000 100%);
+
+    padding: 48px 88px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    color: var(--orange);
+
+    font-family: 'Lily Script One', system-ui;
+    font-size: 1.3rem;
+}
+
+.logo img {
+    width: 14%;
+    margin-right: 12px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 34px;
+
+    font-size: 1.3rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+}
+
+nav .social-media {
+    gap: 10px;
+
+    color: var(--orange);
+
+    font-size: 1.2rem;
+}
+
+.main-header-content {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    height: 60vh;
+
+    margin-top: 100px;
+}
+
+.descreption {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    width: 33.33%;
+}
+
+.descreption h1 {
+    color: white;
+
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+.descreption p {
+    width: 70%;
+    color: grey;
+}
+
+.descreption a {
+    color: white;
+    background-color: var(--orange);
+
+    text-decoration: none;
+    font-weight: 600;
+
+    width: fit-content;
+
+    padding: 7px 13px;
+
+    border-radius: 28px;
+}
+
+.descreption .social-media {
+    gap: 7px;
+
+    color: var(--orange);
+
+    margin-left: 3%;
+
+    font-size: 1.1rem;
+}
+
+.photo {
+    position: relative;
+    width: 33.33%;
+}
+
+.photo .circle {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    border: 50px solid var(--orange);
+}
+
+.photo .dude {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    transform: scale(133%, 133%);
+}
+
+.shape {
+    width: 33.33%;
+
+    color: var(--orange);
+
+    position: relative;
+}
+
+.shape * {
+    position: absolute;
+}
+
+.shape .big-flower {
+    top: 0;
+    left: 26%;
+
+    font-size: 6.7rem;
+}
+
+.shape .medium-flower {
+    right: 26%;
+    bottom: 40%;
+
+    font-size: 5.2rem;
+}
+
+.shape .small-flower {
+    left: 38%;
+    bottom: 10%;
+
+    font-size: 3.7rem;
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+
+    margin-top: 12px;
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.percent .number h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.text {
+    position: relative;
+    color: var(--orange);
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.box:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    stroke: var(--orange);
+}
+
+.box:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 62) / 100);
+    stroke: var(--orange);
+}
+
+.box:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 35) / 100);
+    stroke: var(--orange);
+}
+
+.box:nth-child(4) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    stroke: var(--orange);
+}
+
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    background-color: black;
+
+    padding: 48px 88px;
+}
+
+.top-section {
+    display: flex;
+
+    height: 95vh;
+}
+
+.top-section .descreption {
+    color: white;
+
+    width: 90%;
+    margin-top: 6%;
+}
+
+.descreption span {
+    color: var(--orange);
+}
+
+.top-section h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.see-more {
+    display: flex;
+}
+
+.see-more span {
+    color: white;
+
+    font-weight: bold;
+
+    margin-right: 12px;
+}
+
+.top-section a {
+    color: black;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 22%);
+
+    gap: 24px;
+
+    width: 60%;
+}
+
+.photos * {
+    border-radius: 12px;
+
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.photo1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+}
+
+.photo2 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.photo3 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.photo4 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.photo5 {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+}
+
+
+
+
+.bottom-section h1 {
+    color: white;
+
+    font-size: 3rem;
+    font-weight: 800;
+
+    text-align: center;
+}
+
+.pros-of-orange {
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.pro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 16px;
+
+    border: 1px solid white;
+    border-radius: 12px;
+
+    background: linear-gradient(180deg, #2D2D2D 0%, #000000 100%);
+}
+
+.pro i {
+    font-size: 2.3rem;
+
+    color: var(--orange);
+}
+
+.pro h2 {
+    color: white;
+}
+
+.pro p {
+    color: grey;
+}
+
+.pro a {
+    color: var(--orange);
+
+    text-decoration: none;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 80px 0;    
+
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    bottom: -15%;
+    left: -15%;
+    background-image: url(assets/image3.jpg);
+    transform: scale(1.3);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(35px);
+    z-index: -1;
+}
+
+.first-column {
+    gap: 16px;
+}
+
+.logo-info {
+    display: flex;
+    align-items: center;
+}
+
+.logo-info img {
+    width: 4em;
+
+    margin-right: 12px;
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    font-family: 'Lily Script One', system-ui;
+    font-size: 1.5rem;
+
+    color: white;
+}
+
+#college {
+    color: #87868e;
+    
+    font-size: 0.9rem;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: -9%;
+
+    width: 15%;
+    
+}
+
+.blur-background {
+    width: 0;
+    height: 0;
+    display: block;
+}
+
+footer > div p {
+    color: #87868e;
+}
+
+footer > div a {
+    color: white;
+
+    text-decoration: none;
+}
+
+footer > div a i {
+    color: #87868e;
+}
+
+footer > div h3 {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-links a {
+    color: #87868e
+}
+
+.first-column .social-media {
+    color: #87868e;
+
+    font-size: 2rem;
+
+    gap: 16px;
+}
+
+.second-column,
+.third-column {
+    gap: 48px;
+}
+
+.fourth-column {
+    gap: 23px;
+    margin-right: 48px;
+}
+
+.fourth-column hr {
+    width: 100%;
+
+    border: 1.7px solid var(--orange);
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+
+    color: #87868e;
+}
+
+.contacts svg{
+    width: 23px;
+    height: 23px;
+
+    margin-right: 10px;
+}
